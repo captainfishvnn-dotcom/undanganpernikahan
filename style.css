@@ -29,5 +29,11 @@ body {
 }
 
 .hero a {
-  color
+  color: var(--pink);
+  background-color: white;
+}
+
+.hero a:hover {
+  background-color: var(--pink);
+  color: white;
 }
