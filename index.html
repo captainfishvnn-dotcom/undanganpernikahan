@@ -10,6 +10,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+<!-- simplyCountdown -->
+<link rel="stylesheet" href="countdown/themes/default.css">
+    <script src="countdown/simplyCountdown"></script>
     
     <link rel="stylesheet" href="style.css">
   </head>
@@ -21,12 +25,32 @@
       <h4>Kepada Bapak/Ibu/Saudara/I, </h4>
       <h1>Kousei Arima & Kaori Miyazono</h1>
       <p>Akan Melangsungkan Resepsi Pernikahan:</p>
-      <a href="#undangan" class="btn btn-lg">Lihat Undangan</a>
+      <div class="my-countdown simply-countdown"></div>">
+      <a href="#undangan" class="btn btn-lg mt-4">Lihat Undangan</a>
     </main>
   </section>
 
     
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" 
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" 
+      crossorigin="anonymous"></script>
+
+    <script>
+      simplyCountdown('.countdown', {
+         year: 2027, // Target year (required)
+        month: 2, // Target month [1-12] (required)
+        day: 18, // Target day [1-31] (required)
+        hours: 8, // Target hour [0-23], default: 0
+        words: { // words displayed into the countdown
+            days: { singular: 'hari', plural:'hari' },
+            hours: { singular: 'jam', plural:'jam' },
+            minutes: {singular: 'menit', plural:'menit' },
+            seconds: { singular: 'detik', plural:'detik' }
+        },
+    });
+
+      });
+    </script>
   </body>
   
 </html>
