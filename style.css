@@ -63,6 +63,7 @@ body {
 .mynavbar .navbar-brand, .mynavbar .ofcanvas-title {
   font-family: 'pasifico', cursive;
   font-size: 3.2rem;
+  font-weight: bold;
 }
 
 .mynavbar .nav-link {
