@@ -57,6 +57,18 @@ body {
   color: white;
 }
 
+.mynavbar{
+}
+
+.mynavbar .navbar-brand, .mynavbar .ofcanvas-title {
+  font-family: 'pasifico', cursive;
+  font-size: 3.2rem;
+}
+
+.mynavbar .nav-link {
+  text-transform: uppercas;
+}
+
 /* Media Query */
 /* laptop */
 @media (max-width: 992px) {
@@ -69,6 +81,11 @@ body {
 @media (max-width: 768px) {
   html {
     font-size: 65%;
+  }
+
+  .mynavbar .nav-link {
+    font-size: 2rem;
+    text-align: center;
   }
 }
 
